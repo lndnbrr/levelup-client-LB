@@ -8,7 +8,7 @@ const firebaseCredentials = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const clientCridentials = {
+const clientCredentials = {
   ...firebaseCredentials,
   databaseURL: process.env.NEXT_PUBLIC_DATABASE_URL,
 };

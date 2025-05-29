@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import { clientCredentials }from '.client'
+import { clientCredentials } from './client';
 
 const signIn = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
@@ -22,7 +22,7 @@ const checkUser = (uid) =>
       },
     })
       .then((resp) => resolve(resp.json()))
-      .catch(reject)
+      .catch(reject);
   });
 
 const registerUser = (userInfo) =>
@@ -39,10 +39,4 @@ const registerUser = (userInfo) =>
       .catch(reject);
   });
 
-
-export { 
-  signIn, 
-  signOut,
-  checkUser,
-  registerUser, 
-};
+export { signIn, signOut, checkUser, registerUser };
