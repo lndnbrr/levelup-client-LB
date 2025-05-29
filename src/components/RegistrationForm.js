@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { Button } from 'react-bootstrap/Button';
-import { Form } from 'react-bootstrap/Form';
+import { Form, Button } from 'react-bootstrap';
 import { registerUser } from '../utils/auth';
 
 function RegisterForm({ user, updateUser }) {
