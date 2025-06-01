@@ -22,12 +22,4 @@ const createEvents = (event) =>
       .catch(reject);
   });
 
-const getGame = () =>
-  new Promise((resolve, reject) => {
-    fetch(`${clientCredentials.databaseURL}/games`)
-      .then((response) => response.json())
-      .then(resolve)
-      .catch(reject);
-  });
-
-export { getEvents, createEvents, getGame };
+export { getEvents, createEvents };
